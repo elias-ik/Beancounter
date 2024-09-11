@@ -26,6 +26,9 @@ public class Optional<TValue>
     
     public static implicit operator Optional<TValue>(TValue value) => new(value);
     
+    public static Optional<TValue> None => new();
+
+    public static Optional<TValue> Empty => new();
 
     public TValue Unwrap()
     {
